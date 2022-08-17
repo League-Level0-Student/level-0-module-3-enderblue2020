@@ -9,7 +9,8 @@ public static void main(String[] args) {
 	if(A1.contentEquals("Cabin")) {
 		String A2a = JOptionPane.showInputDialog(null, "You enter the cabin. There is an unlit fire and a small attic. Light the fire or go upstairs?(Fire/Ladder)");
 		if(A2a.contentEquals("Ladder")) {
-			
+		JOptionPane.showMessageDialog(null, "You climb up to the attic and find nothing!");
+		System.exit(404);
 		}
 		}
 	
@@ -17,9 +18,11 @@ public static void main(String[] args) {
 		String A2b = JOptionPane.showInputDialog("You follow the path. Suddenly, there's a huge rock slide!!! Run or hide? (Run/Hide)");
 		if(A2b.contentEquals("Run")) {
 			JOptionPane.showMessageDialog(null, "You are unable to outrun the rockslide. You died!");
+			System.exit(404);
 		}
 		if(A2b.contentEquals("Hide")) {
 			JOptionPane.showMessageDialog(null, "Nowhere to hide! You died!");
+			System.exit(404);
 	}
 	
 	
